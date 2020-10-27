@@ -1,38 +1,390 @@
-.App {
-  text-align: center;
-}
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike,strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+  margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+/* ====================================== Global ================================================ */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  body{font-family: 'Roboto', sans-serif;}
+  .mainheading{
+    color: #131f66;
+    font-weight: 700;
+    font-size: 40px;
   }
+.para{
+  font-size: 18px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.colorwhite{
   color: white;
 }
+.colorgrey{
+  color: #ababab;
+}
+.flight{
+  font-weight: 300;
+}
+.fmedium{
+  font-weight: 500;
+}
+/* ====================================== Header ================================================ */
+  .customNav {
+    background-color: transparent !important;
+    font-weight: 500;
+    font-size: 18px;
+  }
+   .myNav{
+    color: #9fa7a7;
+    font-weight: 500;
+  }
+  .navPosition{
+    position: relative;
+  }
+  .contactLi{
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+  }
+  .navphone{
+    font-size: 11px;
+  }
+  .phoneColor,.phoneColor p{
+    color: #131f66 !important;
+  }
+/* ====================================== Banner ================================================ */
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  color: transparent;
+  border: 1px solid white;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+.carousel-indicators .active {
+  background-color: white;
+}
+.carouselback{
+  background-image: url('./images/banner.png' );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 378px 0;
+}
+.carouselback h1{
+  color: white;
+  font-size: 60px;
+  font-weight: 500;
+}
+.carouselback p{
+  margin-top: 15px;
+  line-height: 27px;
+  width: 71%;
+}
+.bannerBtn{
+  color: white;
+  background-color: #131f66;
+  border: 1px solid #131f66;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 12px 17px;
+  margin-top: 25px;
+  transition: 0.3s ease-in-out;
+}
+.bannerBtn:hover{
+  color: #131f66;
+  background-color: white;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+/* ====================================== hire Section ================================================ */
+.hireSection{
+  background-color: #131f66;
+  padding: 124px 17px;
+}
+.hireSection h1,.jobsection h1{
+  color: white;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+}
+.hireBtn{
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 12px 17px;
+  margin-top: 25px;
+  transition: 0.3s ease-in-out;
+}
+.hireBtn:hover{
+  color: #131f66;
+  background-color: white;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.jobsection{
+  background-color: #9fa7a7;
+  padding: 124px 17px;
+} 
+/* ====================================== About US ================================================ */
+.aboutP{
+  color: #9fa7a7;
+  margin-top: 16px;
+  line-height: 25px;
+}
+ 
+/* ====================================== Approch ================================================ */ 
+.approch{
+  background-image: url('./images/approch.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 126px 180px 126px 0;
+}
+.approch h1{
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+}
+.approch p{
+  line-height: 25px;
+}
+/* ====================================== Services ================================================ */
 
-.App-link {
-  color: #61dafb;
+.services h2{
+  color: #131f66;
+  font-weight: 900;
+  font-size: 25px;
+  margin: 30px 0;
+}
+.services p{
+  color: #ababab;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+}
+.moreDetail{
+  color: white;
+  background-color: #131f66;
+  border: 1px solid #131f66;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 17px 23px;
+  margin-top: 25px;
+  transition: 0.3s ease-in-out;
+}
+.moreDetail:hover{
+  color: #131f66;
+  background-color: white;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}  
+/* ====================================== Testimonial ================================================ */ 
+.testimonial{
+  background-image: url('./images/testimonialBack.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 0px;
+}
+.testimonialImg{
+  width: 140px!important;
+  height: 140px;
+  margin: 0 auto;
+}
+.testimonialH{
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+.testimonialH2{
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+.testimonialP{
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 35px;
+  margin: 0 auto;
+  width: 55%;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: transparent;
+  border: 2px solid white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ====================================== SignUP ================================================ */
+.signup{
+  background-color: #9fa7a7;
+}
+.signup h1{
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.signup h2{
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+} 
+.emailText{
+  width: 370px;
+  padding: 12px 17px;
+}
+.emailText:focus{
+  outline: none;
+}
+.subscribe{
+    position: relative;
+    top: 2px;
   }
-  to {
-    transform: rotate(360deg);
+  .subscribe:hover{
+    color: #131f66;
+    background-color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+  }
+/* ====================================== Footer ================================================ */
+.footer{
+  background-color: #242424;
+}
+.footer li,.footer a{
+  list-style: none;
+  color: #a0a0a0;
+  font-weight: 300px;
+}
+.footer li{
+  line-height: 22px;
+}
+.footer h1{
+  color: #a0a0a0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.linbreak{
+  white-space: pre-wrap;
+
+}
+.footerCopy{
+  background-color: #242424;
+  border-top: 1px solid #555555;
+}
+/* .footerCopy p{
+  color: #a0a0a0;
+  font-size: 17px;
+  font-weight: 300;
+} */
+.socialIcons {
+  color: #555555;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+  font-size: 25px;
+
+}
+
+.socialIcons:hover {
+  color: white;
+  background: #131f66;
+  transition: 0.2s ease-in-out;
+}
+
+.footer-ul>li {
+  display: inline-block;
+  margin-left: 10px;
+} 
+/* ====================================== Media Queries ================================================ */ 
+@media(max-width:1199px){
+.bannerMain{
+    padding-left: 20px;
+}
+.emailText {
+  width: 289px;
+}
+}
+@media(max-width:1199px){
+  .customNav {
+    font-size: 15px;
   }
 }
+@media(max-width:991px){
+  .navPosition{
+    position: static;
+  }
+  #navBtn {
+    outline: none;
+    border: 1px solid grey;
+}
+  .contactLi{
+    position: static;
+  }
+  .customNav {
+    font-size: 18px;
+  }
+  .carouselback{
+    padding: 80px 0;
+  }
+  br{
+    display: none;
+  }
+  .jobsection,.hireSection {
+    padding: 25px 17px;
+  }
+  .hireSection h1, .jobsection h1 {
+    font-size: 34px;
+  }
+  .approch{
+    background-image: none;
+    background-color: #131f66;
+    padding: 40px 0;
+  }
+  .services h2{
+    margin: 15px 0;
+  }
+  .moreDetail{
+    margin-top: 15px;
+  }
+  .testimonialP{
+    width: 100%;
+    padding: 0 20px;
+  }
+  .emailText{
+    width: 270px;
+  }
+  .subscribe {
+    margin-top: 8px;
+    top: 2px;
+    right: 15px;
+  }
+}
+@media(max-width:767px){
+  .carouselback{
+    background-image: none;
+    background-color: #324249; /* Old browsers */
+    background: -moz-linear-gradient(left,  #324249 0%, #7c929c 100%); 
+    background: -webkit-linear-gradient(left,  #324249 0%,#7c929c 100%);
+    background: linear-gradient(to right,  #324249 0%,#7c929c 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#324249', endColorstr='#7c929c',GradientType=1 );
+  }
+  .carouselback h1 {
+    font-size: 21px;
+  }
+  .carouselback p {
+    font-size: 15px;
+    width: 100%;
+  }
+
+}
+@media(max-width:480px){
+.logo{
+  width: 186px;
+  }
+  .bannerBtn{
+    font-size: 18px;
+  }
+}
+
